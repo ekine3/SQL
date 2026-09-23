@@ -46,7 +46,22 @@ values('1','A1')
 insert into dbo.Parking(EmployeeID,ParkingSpot)
 values('2','A2')
 
+/*table PhoneNumber*/
+create table dbo.PhoneNumber
+(
+EmployeeID varchar(50),
+PhoneNumber varchar(50)
+)
+
+insert into dbo.PhoneNumber(EmployeeID, PhoneNumber)
+values(1,'121-112-3342')
+
+insert into dbo.PhoneNumber(EmployeeID, PhoneNumber)
+values(2,'111-111-1111')
+/*List all tables*/
 select * from dbo.employees
 select * from dbo.salary
 select * from dbo.Parking
+select * from dbo.PhoneNumber
+
 /*EOF*/
